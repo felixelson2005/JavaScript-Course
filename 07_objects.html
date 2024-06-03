@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Objects</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+ 
+
+    <script>
+    
+    // const product= {
+
+    //     name: 'socks',
+    //     price: 1500
+
+    // };
+
+    // console.log(product);
+    // console.log(product.name);
+    // console.log(product.price);
+    // product.name='Cotton socks';
+    // console.log(product.name)
+
+    // product.newprop=false;
+    // console.log(product.newprop);
+    // delete product.newprop;
+    // console.log(product)
+
+
+    // const product2= {
+    //     name: 'shirt',
+    //     'delivery-time': '2 day',
+    //     rating: {
+
+    //         stars: 4.5,
+    //         count: 87
+    //     }
+
+    // };
+
+    // const myfamily= {
+    //     Grandpa: 'Antony',
+    //     Grandma: 'Marshal',
+    //     sons: {
+    //         son1: 'Elson',
+    //         son2: 'Raja',
+    //         Grandsons:{
+    //             grandson1: 'William',
+    //             grandson2: 'Tony'
+    //         }
+    //     },
+    //     fun: function funct1(){
+    //         console.log('Hello function objects');
+    //     },
+    //     addf: function add2num(num1,num2){
+    //         console.log('The 2 addstions values are: '+(num1+num2));
+    //     }
+
+    // };
+    // console.log(product2.name)
+    // console.log(product2['name'])
+    // console.log(product2['delivery-time'])
+    // console.log(product2.rating.stars)
+    // console.log(myfamily.sons.Grandsons.grandson1)
+    // myfamily.fun();
+    // myfamily.addf(25,26);
+
+    // const jsonstr= JSON.stringify(product2);
+    // console.log(JSON.parse(jsonstr));
+    // const anto_object={
+    //     name: 'Anto Felix Elson',
+    //     Age: '45',
+    //     Sex: 'male',
+    //     Describtion: 'Lovebale character',
+    //     Workhours: function calchours(hr){
+    //         return hr*8*4;
+    //     }
+    //     };
+    //     console.log('Anto Json Object is '+JSON.stringify(anto_object));
+    //     const jsonp=JSON.stringify(anto_object);
+    //     const jsp=JSON.parse(jsonp);
+    //     console.log('Anto Javascript Object is '+jsp.Workhours.calchours(2));
+    // console.log('Hello'.length)
+    // console.log('Hello'.toUpperCase())
+    // const object1={
+    //     Worker1: 'Anto Felix Elson'
+    // }
+
+    // console.log(object1.Worker1)
+    // const object2=object1;
+    // console.log(object2)
+    // object2.Worker1='Anto Jeff Tony'
+    // console.log(object1.Worker1)
+    // console.log(object2.Worker1)
+
+    // const shortem={
+
+    //     var1: 'Hello',
+    //     var2: 56
+    // };
+    // const myvar1=shortem.var1;
+    // const {var1,var2}=shortem;
+    // console.log(var1);
+    // console.log(var2);
+
+    // const myobj1={
+    //     var1: 'Elson',
+    //     var2: 23-78,
+    //     'delivery-time': '1 day',
+    //     ratings:{
+    //         price: 57,
+    //         rating: 4.3
+    //     },
+    //     fun: function display(){
+    //         console.log('Hello my first function inside object');
+    //     }
+
+    // };
+    // console.log('my recent var'+myobj1.var1)
+
+    // const shortem2={
+
+    //     var1,
+    //     var2,
+    //     mymethod: function funct1(){
+    //         console.log('Hello my method');
+    //     }
+    // };
+
+    // console.log(myobj1.var2);
+    // console.log(myobj1['delivery-time']);
+    // console.log(myobj1.ratings.rating)
+    // console.log(myobj1.fun())
+    // console.log(JSON.stringify(myobj1));
+    // const jsonString=JSON.stringify(myobj1);   
+    // console.log(JSON.parse(jsonString));  
+          
+    console.log('Hello'.length)
+    console.log('Hello'.toUpperCase());
+
+    const object_1={
+        name: 'Anto',
+        Age: 54,
+        subject: 'insurance',
+        dates : '051220269',
+        method1(){
+            console.log('Hello my world');
+        }
+
+    }
+    const object_2 = object_1;
+
+    console.log(object_2);
+    object_2.Age=78;
+    console.log(object_1);
+    console.log(object_1===object_2)
+
+   // const Age=object_1.Age;
+
+    const {Age}=object_1;
+    console.log(Age)
+    const {name}=object_2;
+    console.log(name);
+
+    const {subject,dates}=object_1;
+    console.log(subject +' '+ dates);
+    const object5={
+        name
+    }
+    object_1.method1();
+    </script>
+ 
+</body>
+
+
+</html>
+

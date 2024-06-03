@@ -1,0 +1,14 @@
+.style_btn{
+    background-color: rgb(245, 245, 245);
+    color: black;
+    border-radius: px;
+    margin: 25px 3px 10px 5px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.is-toogled{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

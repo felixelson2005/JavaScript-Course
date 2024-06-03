@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Rock Paper Scissors</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+ <p>
+
+</p>
+
+        <button onclick="            
+            playGame('head');  
+        ">Heads </button>
+
+        <button onclick="
+            playGame('tail');
+        ">Tails </button>
+
+<button onclick="
+           scores.wins=0;
+           scores.loss=0;
+           localStorage.removeItem('score');
+        ">ResetScore </button>
+
+    <script>
+            let scores= JSON.parse(localStorage.getItem('score')) || {
+                wins: 0,
+                loss: 0,
+            };
+     
+            function randomSelection(){
+                const randomNumber=Math.random();
+            let computerMoves=null;   
+                if(randomNumber>=0 && randomNumber <1/2){
+                     computerMoves='head';
+                    }else{
+                        computerMoves='tail';
+                    }
+                    console.log('computer picks: '+computerMoves);
+                    return computerMoves;
+            }
+
+            function playGame(playerMove){
+                let computerPicks=randomSelection();             
+                if(playerMove==='head'){
+                    if(computerPicks==='head'){
+                        scores.wins +=1;
+                    }else{
+                        scores.loss +=1;
+                    }
+                }
+                if(playerMove==='tail'){
+                    if(computerPicks==='tail'){
+                        scores.wins +=1;
+                    }else{
+                        scores.loss +=1;
+                    }
+                }
+            
+            localStorage.setItem('score',JSON.stringify(scores));
+
+               alert(`You picked ${playerMove}. Computer picked ${computerPicks}. 
+                    Wins: ${scores.wins},Losses:${scores.loss}`);      
+            }     
+    </script>
+ 
+</body>
+
+
+</html>
+

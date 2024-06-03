@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>DOM Projects</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+    <button>9a</button>    
+    <button class="js_second_button">9b</button> 
+    <br>
+    <br>        
+    <button onclick="
+    calloptions('heads');
+    " class="js_head">heads</button>
+
+    <button onclick="
+    calloptions('tails');
+    " class="js_tail">tails</button> 
+
+    <p class="js_call_option"></p>
+
+    <input placeholder="Enter name" onkeydown="
+       eventVal(event) " class="js_inputName">
+       
+    <button onclick="
+       listName();    
+    "class="js_submit">submit</button>
+
+    <p class="js_listName"></p>
+
+    <input placeholder="Type" onkeyup="
+         showtype(event.key)" class="js_type"> 
+
+    <p class="js_type_page"></p>     
+
+    <script>
+       console.log(document.querySelector('button').innerHTML);
+       document.querySelector('.js_second_button').innerHTML='9b done!';
+
+       function calloptions(option){
+        if(option==='heads'){
+            document.querySelector('.js_call_option').innerHTML='you chose: heads';
+        }else{
+            document.querySelector('.js_call_option').innerHTML='you chose: tails';
+        }
+
+       }
+
+       function listName(){
+        const name= document.querySelector('.js_inputName');
+        const name_value=name.value;
+        document.querySelector('.js_listName')
+                .innerHTML=`You name is ${name_value}`;
+       }
+
+       function eventVal(event){
+        if(event.key==='Enter'){
+            listName();
+        }
+       }
+
+       function showtype(eventkey){
+        const text=document.querySelector('.js_type').value;
+        document.querySelector('.js_type_page')
+                .innerHTML=text;
+       }
+       
+
+    </script>
+ 
+</body>
+
+
+</html>
+

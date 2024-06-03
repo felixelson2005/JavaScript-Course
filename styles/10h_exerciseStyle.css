@@ -1,0 +1,29 @@
+
+body{
+    font-family: Arial;
+}
+
+
+.css-cost-input{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.css-calculate{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 12px 15px;
+    cursor:pointer;
+}
+
+.style_error{
+    color: red;
+}
+
+.style_free{
+    color: green;
+    font-weight: bold;
+}
+

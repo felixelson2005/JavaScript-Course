@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Exercise Arrays and Loops</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+    
+    <script>
+
+        // let array_my=[10,20,30];
+        // array_my[array_my.length-1]=99;
+        // console.log(array_my);
+
+        // function returnlastArray(arrValue){
+        //     return arrValue[arrValue.length-1]; }
+
+        // const arr_values=[1,20,33,24,5];  
+        // console.log(returnlastArray(arr_values));    
+
+        // function swapArray(array){
+            
+        //     const firstValue=array[0];
+        //     const lastValue=array[array.length-1];
+
+        //     array[array.length-1]=firstValue;
+        //     array[0]=lastValue;
+        //     return array;
+     
+        // }
+        // const arr_values_1=[7,20,33,24,5,10]; 
+        // console.log(swapArray(arr_values_1));
+
+        // for(let i=0;i<10;i=i+2){
+
+        //     console.log(i)
+
+        // }
+
+        // for(let i=5;i>=0;i--){
+
+        //     console.log(i)
+
+        // }
+
+        // let j=0;
+        // while(j<10){
+        //     console.log(`while loop ${j}`);
+        //     j=j+2;
+        // }
+
+        // let k=5;
+        // while(k>=0){
+        //     console.log(`while loop ${k}`);
+        //     k--;
+        // }
+
+
+        
+    //     function addone(my_arr){
+    //     for(let i=0;i<my_arr.length;i++){
+    //         my_arr[i]=my_arr[i]+1;
+    //     }
+    //     return my_arr;
+    // }
+
+    //     console.log(addone([4,64,8]))
+
+
+            
+    //     function addone_bynum(my_arr,num){
+    //     for(let i=0;i<my_arr.length;i++){
+    //         my_arr[i]=my_arr[i]+num;
+    //     }
+    //     return my_arr;
+    // }
+
+    // console.log(addone_bynum([4,64,8],50))
+
+
+    //         function addtwoArrays(my_arr1,my_arr2){
+    //             let my_arr=[];
+    //     for(let i=0;i<my_arr1.length;i++){
+    //         my_arr[i]=my_arr1[i]+my_arr2[i];
+    //     }
+    //     return my_arr;
+    // }
+
+    // console.log(addtwoArrays([1,2,3],[1,2,3]))
+ 
+
+    // function countPositive(my_arr){
+    //     let num=0;
+    //     for(let i=0;i<my_arr.length;i++){
+    //         if(my_arr[i]>0){
+    //             num++;
+    //         }
+    //     }
+    //     return num;
+    // }
+
+    // console.log(countPositive([1,2,-33,0,-9,-8]))
+    // 
+    
+//     function minmaxvalue(my_arrys){
+//         let min=0;
+//         let max=0;
+//         let temp=0
+//         if(my_arrys.length>0){   
+//             if(my_arrys.length===1){
+//                 return {minimum: my_arrys[0], maximum: my_arrys[0]};    
+//             }    
+//         for(let i=0;i<my_arrys.length;i++){
+//             if(my_arrys[i]>=max){
+//                 max=my_arrys[i];
+//             }else if(my_arrys[i]<=min){
+//                 min=my_arrys[i];
+//             }else{
+//                 temp=my_arrys[i];
+//             }
+//            }
+//            return {minimum: min, maximum: max};  
+//     }else{
+
+//         return {minimum: null, maximum: null};  
+
+//     }
+
+// }
+
+//     console.log(minmaxvalue([1,2,0,45,90,9,12345,8945456]))
+//     console.log(minmaxvalue([]))
+//     console.log(minmaxvalue([3]))
+    
+
+
+    //Takes an array input
+    //loops the arrays
+    //check if words are repeated and add to the boject and update the respective count
+//     word_obj={};
+//     let count=0;  
+//     for(let i=0;i<word.length;i++){
+//         const my_word=word[i];
+//         if(!word_obj[word[i]]){
+
+//             word_obj[my_word]=1;
+
+//         }else{
+//             word_obj[my_word]++;
+
+//         }
+//     }
+
+//     return word_obj;
+// }
+//  console.log(countWords(['apple','mango','apple']))
+
+    function searchStr(strValue,wordArrays){
+        let notAvailabe=0;
+        for(let i=0;i< wordArrays.length; i++ ){
+            const word=wordArrays[i];
+            if(word===strValue){
+                return 1;
+            }else{
+
+            notAvailabe++;
+            }
+        }
+
+        if(notAvailabe===wordArrays.length){
+            return -1;
+        }
+
+    }
+
+    console.log(searchStr('Star',['planets','Geo','Earth','Star','Satellite']));
+
+    console.log(searchStr('Star',['planets','Geo','Earth','Stars','Satellite']));
+
+    function removeEgg(foods){
+
+        const arrays_test=[];
+
+        for(let i=0;i<foods.length;i++){
+            if
+        }
+    }
+    </script>
+
+
+ 
+</body>
+
+
+</html>
+

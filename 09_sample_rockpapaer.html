@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+        playGame();
+    ">Rock</button>
+
+    <button onclick="
+        playGame();
+    ">Paper</button>
+
+    <button onclick="
+         playGame();
+    ">Scissor</button>
+
+    <button onclick="
+         let score={
+            wins: 0,
+            Loss:0,
+            Ties:0
+         }         
+    ">Reset</button>
+     <script>
+
+        function computerPick(){
+            let computerPicks='';
+            const random=Math.random;
+            
+            if(random>0 && random < 1/2){
+                computerPicks='Rock';
+            }else if (random>1/2 && random < 3/4){
+                computerPicks='Paper';
+            }else if (random>3/4 && random < 1){
+                computerPicks='Scissor';
+            }
+            return computerPicks;
+        }
+
+        function playGame(manualPicks){
+            let results='';
+            if(manualPicks==='Paper'){
+                
+            }
+        }
+
+    </script>
+  </body>
+</html>

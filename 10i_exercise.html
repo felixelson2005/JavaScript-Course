@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+    <link
+       rel="stylesheet"
+    href="styles/10i_exercise_calc.css">
+  </head>
+  <body>
+    <!-- Code changes are at the bottom. -->
+    <p class="js_updateCalc"></p>
+
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      " class="style_calc">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      " class="style_calc">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      " class="style_calc">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      " class="style_calc style_symbol">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      " class="style_calc">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      " class="style_calc">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      " class="style_calc">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+      " class="style_calc style_symbol">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      " class="style_calc">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      " class="style_calc">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      " class="style_calc">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      " class="style_calc style_symbol">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      " class="style_calc">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      " class="style_calc ">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        displayValue(calculation);
+      
+        // Remember to save the calculation here.
+        saveCalculation();
+      " class="style_calc ">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      " class="style_calc style_symbol">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        console.log(calculation);
+
+        // Remember to save the calculation here.
+        localStorage.removeItem('calculation', calculation);
+        displayValue('');
+      " class="style_calc clear_style">Clear</button>
+    </p>
+    <script src="scripts/10i_exercise_calc.js"></script>
+  </body>
+</html>

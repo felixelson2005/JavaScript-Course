@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Objects</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+ 
+
+    <script>
+    //Object creations
+    const amazon_products ={
+        name: 'Basketball',
+        price: 2095,
+        ['delivery-time']: '3 days'
+
+    }
+    //Display objects
+    console.log(amazon_products)
+    //Update object values
+    amazon_products.price=amazon_products.price+500;
+    //update property with - and access with brackets
+    console.log(amazon_products['delivery-time'])
+    console.log(amazon_products)
+    //function to compare and return lower price product
+    function comparePrice(product1,product2){
+        if(product1.price>product2.price){
+            return product1;
+        }else{
+            return product2;
+        }
+    }
+
+    const product1={
+        name: 'lights',
+        price: 55
+    }
+    const product2={
+        name: 'volleyball',
+        price: 65
+    }
+
+    product2.price=product2.price+50;
+
+   console.log(comparePrice(product1,product2));
+   const product3=product1;
+
+
+       //function to compare 2 objects
+   function issameproduct(p1,p2){
+    if(p1===p2){
+
+        return true;
+    }else{
+        return false;
+    }
+   }
+   console.log(issameproduct(product1,product3));
+   const var1= 'Welcome Onboard'
+   console.log(var1.toLowerCase())
+   console.log('test'.repeat(2))
+    </script>
+ 
+</body>
+
+
+</html>
+

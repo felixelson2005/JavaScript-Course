@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Variables</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="
+    console.log(`Cart Quantity: ${quantity}`)
+    ">
+     Show Quantity   
+    </button>
+    <button onclick="earlyReturnPlus(1);console.log(`Cart Quantity: ${quantity}`)
+    ">
+       Add to Cart
+     </button>
+
+     <button onclick="earlyReturnPlus(2);console.log(`Cart Quantity: ${quantity}`)">
+        +2
+     </button>
+
+     <button onclick="earlyReturnPlus(3);console.log(`Cart Quantity: ${quantity}`)">
+        +3
+     </button>
+
+     <button onclick="earlyReturnPlus(4);console.log(`Cart Quantity: ${quantity}`)">
+      +4
+    </button>
+
+    <button onclick="earlyReturnPlus(5);console.log(`Cart Quantity: ${quantity}`)">
+      +5
+    </button>
+
+    <button onclick="(quantityTemp =quantity-1);(console.log(quantityTemp < 0 ? 'Not Enough items in the cart' : quantity -=1));">
+      Remove from cart
+    </button>
+
+    <button onclick="(quantityTemp =quantity-2);(console.log(quantityTemp < 0 ? 'Not Enough items in the cart' : quantity -=2));">
+      -2
+    </button>
+
+    <button onclick="(quantityTemp =quantity-3);(console.log(quantityTemp < 0 ? 'Not Enough items in the cart' : quantity -=3));">
+      -3
+    </button>
+
+     <button onclick="(quantity = 0);(quantityTemp=0);console.log('Cart was Reset.');console.log(`Cart Quantity: ${quantity}`)">
+        Reset Cart
+     </button>
+
+    <script>
+            let quantity = 0;
+            var quantityTemp=0;
+
+            function quanityCheck(num){
+              (quantityTemp =quantity+num);(console.log(quantityTemp<10 ? quantity += num: 'The Cart is full' ));
+            }
+
+            function earlyReturnPlus(value){
+              if(quantity >=9){
+                alert('Cart is full')
+                return;
+              }else{
+                quantity +=value;
+              }
+            }
+            const message='Hello';
+            console.log(typeof quantity);
+            console.log(typeof message);
+    </script>
+ 
+</body>
+
+
+</html>
+

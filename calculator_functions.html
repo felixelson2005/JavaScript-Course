@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculator</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+    <p></p>
+     <button onclick="console.log(calculationPlus('1'))">
+        1
+     </button>
+
+     <button onclick="console.log(calculationPlus('2'))">
+        2
+     </button>
+
+     <button onclick="console.log(calculationPlus('3'))">
+        3
+     </button>
+
+     <button onclick="console.log(calculationPlus(' + '))">
+        +
+     </button>
+
+
+  <button onclick="console.log(calculationPlus(' - '))">
+    -
+ </button>
+
+     <br>
+     <button onclick="console.log(calculationPlus('4'))">
+       4
+    </button>
+
+    <button onclick="console.log(calculationPlus('5'))">
+      5
+   </button>
+
+   <button onclick="console.log(calculationPlus('6'))">
+     6
+  </button>
+
+  <button onclick="console.log(calculationPlus(' * '))">
+    *
+ </button>
+
+ <button onclick="console.log(calculationPlus(' / '))">
+   /
+</button>
+
+  <br>
+
+  <button onclick="console.log(calculationPlus('7'))">
+    7
+ </button>
+
+ <button onclick="console.log(calculationPlus('8'))">
+   8
+</button>
+
+<button onclick="console.log(calculationPlus('9'))">
+  9
+</button>
+
+     <button onclick="(calculation=eval(calculation));
+       console.log(calculation);">
+        =
+     </button>
+
+     <button onclick="(calculation ='');
+     console.log(calculation)">
+       Reset
+    </button>
+
+
+    <script>
+            let calculation = ''; 
+            function calculationPlus(value){
+              return calculation += `${value}`;
+            }   
+            
+            function calculationMinus(value){
+              return calculation -= `${value}`;
+            }  
+            
+    </script>
+ 
+</body>
+
+
+</html>
+

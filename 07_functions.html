@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Functions</title>
+        <style>
+            /*
+            This is CSS styles
+            */
+        </style>
+
+    </head>
+<body>
+ 
+
+    <script>
+
+        function function1(){
+            console.log('hello my functions');
+            console.log(2+2);
+        }
+
+        function calcTax (cost,taxPercent=0.1){
+
+            return cost*taxPercent;
+
+        }
+
+        function greet(name){
+
+            if(!name){
+                console.log(`Hello $ Default!`)
+            } else{
+                console.log(`Hello ${name}!`)
+            }
+
+
+         }
+
+         function convertToFahrenheat(celsius){
+            return (celsius*9/5)+32;
+         }
+
+         function convertToCelsius(fahrenheat){
+            return (fahrenheat-32)*5/9;
+         }
+
+         function convertTemp(degree,unit){
+            if(unit==='C'){
+                return convertToCelsius(degree)
+            }else if(unit==='F'){
+                return convertToFahrenheat(degree)
+            }else{
+                console.log('No conversion function available')
+            }
+         }
+        
+       
+        // function1();
+        // function1();
+        // greet('Anto');
+        // greet('Yamini');
+        // greet('Elson');
+        // greet();
+        console.log(`The conversion of F to C is ${convertTemp(10,'F')}`);
+        console.log(`The conversion of C to F is ${convertTemp(10,'C')}`);
+    </script>
+ 
+</body>
+
+
+</html>
+

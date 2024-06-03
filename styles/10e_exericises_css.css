@@ -1,0 +1,50 @@
+.style_addToCart{
+    background-color: rgb(255, 216, 20);
+    border: none;
+    font-size: 25px;
+    border-radius: 50px;
+    margin: 50px;
+    padding: 10px 70px;
+    cursor: pointer;
+}
+
+
+.style_requestnow{
+    background-color: black;
+    border: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border-radius: px;
+    margin: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.style_scheduler{
+    background-color: rgb(230, 230, 230);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border-radius: px;
+    margin: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.style_btn{
+    background-color: rgb(245, 245, 245);
+    color: black;
+    border-radius: px;
+    margin: 25px 3px 10px 5px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.is-toggled{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
